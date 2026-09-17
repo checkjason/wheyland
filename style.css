@@ -217,40 +217,58 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; mar
 }
 
 /* --- ethereal portrait treatment: no frame, soft edge that melts into the sky --- */
-.hero__photo.has-photo { width: 400px; height: 530px; margin: -10px auto -20px; }
+.hero__photo.has-photo { width: 440px; height: 460px; margin: -6px auto -10px; }
 .hero__photo.has-photo::before {
   /* breathing glow behind her */
-  content: ""; position: absolute; inset: -18% -30%; border-radius: 50%; z-index: 0;
-  background: radial-gradient(ellipse at 50% 45%, rgba(255, 236, 205, .7) 0%, rgba(255, 205, 160, .3) 40%, rgba(233, 164, 149, 0) 70%);
-  filter: blur(14px);
+  content: ""; position: absolute; inset: -30% -36%; border-radius: 50%; z-index: 0;
+  background: radial-gradient(ellipse at 50% 48%, rgba(255, 246, 225, .95) 0%, rgba(255, 224, 180, .6) 30%, rgba(255, 200, 160, .25) 52%, rgba(233, 164, 149, 0) 72%);
+  filter: blur(16px);
   animation: halo 6s ease-in-out infinite alternate;
 }
 @keyframes halo { from { transform: scale(.96); opacity: .75; } to { transform: scale(1.06); opacity: 1; } }
 
 .hero__photo.has-photo img {
   position: relative; z-index: 1;
-  width: 100%; height: 100%; object-fit: cover; object-position: 50% 9%;
+  width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%;
   border-radius: 0; border: 0; box-shadow: none;
   /* soft, warm, slightly lifted — like light through gauze */
-  filter: saturate(.88) contrast(.9) brightness(1.08) sepia(.14);
+  filter: saturate(.95) contrast(1.02) brightness(1) sepia(.08);
   /* feathered edge: fully visible in the center, dissolving to nothing at the edges */
-  -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 64%, rgba(0,0,0,.85) 78%, rgba(0,0,0,.3) 92%, transparent 100%);
-          mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 64%, rgba(0,0,0,.85) 78%, rgba(0,0,0,.3) 92%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 48%, #000 52%, rgba(0,0,0,.85) 68%, rgba(0,0,0,.35) 86%, transparent 100%);
+          mask-image: radial-gradient(ellipse 50% 50% at 50% 48%, #000 52%, rgba(0,0,0,.85) 68%, rgba(0,0,0,.35) 86%, transparent 100%);
 }
 .hero__photo.has-photo::after {
   /* dreamy light-leak overlay: rose/gold wash with a top-left glow */
   content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
   background:
-    radial-gradient(circle at 30% 18%, rgba(255, 246, 225, .5), transparent 45%),
-    radial-gradient(circle at 75% 85%, rgba(233, 164, 149, .3), transparent 50%),
-    linear-gradient(160deg, rgba(255, 215, 180, .16), rgba(120, 70, 110, .16));
+    radial-gradient(circle at 30% 18%, rgba(255, 246, 225, .28), transparent 45%),
+    radial-gradient(circle at 75% 85%, rgba(233, 164, 149, .18), transparent 50%),
+    linear-gradient(160deg, rgba(255, 215, 180, .08), rgba(120, 70, 110, .12));
   mix-blend-mode: screen;
   -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 58%, transparent 100%);
           mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 58%, transparent 100%);
   animation: shimmer 9s ease-in-out infinite alternate;
 }
 @keyframes shimmer { from { opacity: .85; } to { opacity: 1; } }
-@media (max-width: 780px) { .hero__photo.has-photo { width: 320px; height: 424px; margin: -6px auto -14px; } }
+@media (max-width: 780px) { .hero__photo.has-photo { width: 330px; height: 345px; margin: -4px auto -8px; } }
+
+/* rays of light radiating from behind her, turning very slowly */
+.hero__rays {
+  position: absolute; left: 50%; top: 48%; width: 190%; aspect-ratio: 1; border-radius: 50%; z-index: 0;
+  transform: translate(-50%, -50%);
+  background: repeating-conic-gradient(from 0deg, rgba(255, 236, 200, .28) 0deg 4deg, rgba(255, 236, 200, 0) 4deg 14deg);
+  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,.9) 0%, rgba(0,0,0,.5) 35%, transparent 62%);
+          mask-image: radial-gradient(circle, rgba(0,0,0,.9) 0%, rgba(0,0,0,.5) 35%, transparent 62%);
+  animation: raysTurn 90s linear infinite; pointer-events: none;
+  mix-blend-mode: screen;
+}
+.hero__rays--2 {
+  width: 150%;
+  background: repeating-conic-gradient(from 7deg, rgba(255, 220, 190, .18) 0deg 2deg, rgba(255, 220, 190, 0) 2deg 23deg);
+  animation: raysTurn 140s linear infinite reverse;
+}
+@keyframes raysTurn { to { transform: translate(-50%, -50%) rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .hero__rays { animation: none; } }
 
 /* faint, blurred echo of the portrait drifting in the sky behind everything */
 .hero__echo {

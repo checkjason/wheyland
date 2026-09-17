@@ -25,7 +25,7 @@
   if (S.heroPhoto) {
     var fig = $("heroPhoto");
     fig.classList.add("has-photo");
-    fig.innerHTML = '<img src="' + esc(S.heroPhoto) + '" alt="' + esc(name) + '">';
+    fig.innerHTML = '<div class="hero__rays" aria-hidden="true"></div><div class="hero__rays hero__rays--2" aria-hidden="true"></div><img src="' + esc(S.heroPhoto) + '" alt="' + esc(name) + '">';
     // soft blurred echo of the portrait in the sky behind the content
     var echo = document.createElement("img");
     echo.className = "hero__echo"; echo.src = S.heroPhoto; echo.alt = ""; echo.setAttribute("aria-hidden", "true");

@@ -13,7 +13,7 @@ window.SITE = {
   // ---- Main photo -------------------------------------------
   // Put the family photo in the /photos folder and enter its file name here.
   // Leave "" to show a soft placeholder until the photo is ready.
-  heroPhoto: "photos/vanessa.jpg",  // the family photo shown in the circle at the top
+  heroPhoto: "photos/vanessa-vigil.jpg",  // the family photo shown in the circle at the top
 
   // ---- Beach background ---------------------------------------
   // A photo of the Carlsbad coastline (Tamarack Beach, the bluffs, the pier at sunset...)

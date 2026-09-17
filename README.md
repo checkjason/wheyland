@@ -148,7 +148,7 @@ Leave `flyerImage`/`flyerPdf` as `""` if there's no flyer.
 - [ ] Site loads at `https://YOUR-USERNAME.github.io/vanessa/`
 - [ ] Vigil details correct (date, sunset time, meeting point)
 - [ ] GoFundMe link works and opens the right campaign
-- [ ] Family photo shows in the circle at the top
+- [ ] Vanessa's portrait shows at the top with the glow and light rays
 - [ ] Test message posted and appears on the page
 - [ ] Album link opens and allows adding photos
 - [ ] Looks right on a phone (most visitors will be on one)
