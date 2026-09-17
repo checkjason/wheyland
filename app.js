@@ -92,6 +92,11 @@
       if (ev.date) meta += "<li>" + ICON.cal + "<div><strong>" + esc(ev.date) + "</strong></div></li>";
       if (ev.time) meta += "<li>" + ICON.clock + "<div><strong>" + esc(ev.time) + "</strong></div></li>";
       if (ev.place) meta += "<li>" + ICON.pin + "<div><strong>" + esc(ev.place) + "</strong>" + (ev.address ? "<span>" + esc(ev.address) + "</span>" : "") + "</div></li>";
+      var parking = "";
+      if (ev.parking) {
+        parking = '<div class="event__parking"><div class="event__parking-icon">P</div><div><strong>Parking &amp; shuttle</strong><p>' + esc(ev.parking) + "</p>" +
+          (isUrl(ev.parkingMapUrl) ? '<a href="' + esc(ev.parkingMapUrl) + '" target="_blank" rel="noopener">Directions to the shuttle lot</a>' : "") + "</div></div>";
+      }
       var actions = "";
       if (isUrl(ev.mapUrl)) actions += '<a class="btn btn--primary" href="' + esc(ev.mapUrl) + '" target="_blank" rel="noopener">Get directions</a>';
       if (ev.flyerPdf) actions += '<a class="btn btn--ghost-dark" href="' + esc(ev.flyerPdf) + '" target="_blank" rel="noopener">Download the flyer</a>';
@@ -102,7 +107,7 @@
       return '<article class="event reveal">' +
         '<div class="event__body"><h3 class="event__title">' + esc(ev.title || "Gathering") + "</h3>" +
         '<ul class="event__meta">' + meta + "</ul>" +
-        (ev.notes ? '<p class="event__notes">' + esc(ev.notes) + "</p>" : "") +
+        (ev.notes ? '<p class="event__notes">' + esc(ev.notes) + "</p>" : "") + parking +
         '<div class="event__actions">' + actions + "</div></div>" + flyer + "</article>";
     }).join("");
   })();

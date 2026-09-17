@@ -384,6 +384,17 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; mar
   border-left: 3px solid var(--gold-400); padding-left: 16px; margin: 0 0 26px;
 }
 .event__actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.event__parking {
+  display: flex; gap: 16px; align-items: flex-start; margin: 0 0 26px; padding: 18px 20px;
+  background: #fff7ea; border: 1px solid #f1dcb4; border-radius: 14px;
+}
+.event__parking-icon {
+  flex: 0 0 44px; width: 44px; height: 44px; border-radius: 10px; background: var(--gold-400); color: var(--plum-900);
+  font-weight: 700; font-size: 24px; display: grid; place-items: center; font-family: var(--sans);
+}
+.event__parking strong { display: block; color: var(--plum-800); font-weight: 600; margin-bottom: 4px; }
+.event__parking p { margin: 0 0 8px; color: var(--ink-600); font-size: 15.5px; line-height: 1.55; }
+.event__parking a { color: var(--rose-500); font-weight: 500; font-size: 15px; }
 .event__flyer { position: relative; background: var(--plum-900); display: grid; place-items: center; min-height: 360px; }
 .event__flyer img { width: 100%; height: 100%; object-fit: cover; }
 .event__flyer a { position: absolute; inset: 0; }

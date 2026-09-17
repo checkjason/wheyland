@@ -52,6 +52,8 @@ window.SITE = {
       address: "Tamarack State Beach, Carlsbad, CA",
       mapUrl: "https://maps.google.com/?q=Tamarack+State+Beach+Carlsbad+CA",
       notes: "Please join as we gather to remember a truly amazing woman. Please bring LED candles or flashlights due to wind.",
+      parking: "Parking at Southside is limited. Please park at Carlsbad High School, 3557 Lancer Way, Carlsbad, CA 92008 — shuttles run to Southside every 15 minutes from 5 to 9 p.m. Local residents are encouraged to bike, walk, or use alternate transportation.",
+      parkingMapUrl: "https://maps.google.com/?q=3557+Lancer+Way+Carlsbad+CA+92008",
       flyerImage: "assets/vigil-flyer.jpg",
       flyerPdf: "assets/vigil-flyer.pdf"
     }
@@ -61,6 +63,11 @@ window.SITE = {
   // ---- Updates from the family ------------------------------
   // Newest first. Add a new block at the top whenever there is news.
   updates: [
+    {
+      date: "September 17, 2026",
+      title: "Parking for tonight's vigil — please use the shuttle",
+      text: "Parking at Southside is limited. Park at Carlsbad High School, 3557 Lancer Way, Carlsbad, CA 92008, and take the shuttle to Southside — shuttles run every 15 minutes from 5 to 9 p.m. Local residents are encouraged to bike, walk, or use alternate transportation."
+    },
     {
       date: "September 16, 2026",
       title: "Candlelight vigil tomorrow at sunset",
