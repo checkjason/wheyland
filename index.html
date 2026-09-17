@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>In Loving Memory of Vanessa Wheyland</title>
+<meta name="description" content="A place to remember Vanessa Wheyland — gatherings, updates from the family, photos, and messages of love.">
+<meta property="og:title" content="In Loving Memory of Vanessa Wheyland">
+<meta property="og:description" content="Gatherings, updates from the family, photos, and messages of love.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%232b1d2e'/%3E%3Cpath d='M32 14c-6 9-9 14-9 20a9 9 0 0 0 18 0c0-6-3-11-9-20z' fill='%23f2b26b'/%3E%3Cpath d='M32 26c-3 4-4 7-4 10a4 4 0 0 0 8 0c0-3-1-6-4-10z' fill='%23fff1d6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a class="nav__brand" href="#top">Vanessa</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#events">Gatherings</a></li>
+    <li><a href="#updates">Updates</a></li>
+    <li id="navLife" hidden><a href="#life">Her Life</a></li>
+    <li><a href="#gallery">Photos</a></li>
+    <li><a href="#messages">Messages</a></li>
+    <li id="navGive" hidden><a href="#give" class="nav__cta">Support the Family</a></li>
+  </ul>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero__sky"></div>
+  <div class="hero__bg" id="heroBg" aria-hidden="true"></div>
+  <div class="hero__sun"></div>
+  <div class="hero__glitter" aria-hidden="true"></div>
+  <svg class="hero__waves" viewBox="0 0 1440 260" preserveAspectRatio="none" aria-hidden="true">
+    <!-- distant bluffs (north Carlsbad coastline) -->
+    <path class="bluff" d="M0,112 C90,104 180,96 300,104 C400,110 480,126 600,150 L600,160 L0,160 Z"/>
+    <path class="bluff bluff--far" d="M860,150 C960,130 1080,106 1200,110 C1300,114 1390,112 1440,108 L1440,160 L860,160 Z"/>
+    <!-- sea base -->
+    <path class="sea" d="M0,146 C240,150 480,140 720,146 C960,152 1200,140 1440,146 L1440,260 L0,260 Z"/>
+    <!-- ocean -->
+    <path class="wave wave--1" d="M0,140 C240,190 480,100 720,140 C960,180 1200,100 1440,140 L1440,260 L0,260 Z"/>
+    <path class="wave wave--2" d="M0,168 C240,128 480,208 720,168 C960,128 1200,208 1440,168 L1440,260 L0,260 Z"/>
+    <!-- foam line -->
+    <path class="foam" d="M0,204 C180,196 300,214 480,206 C660,198 780,216 960,208 C1140,200 1260,218 1440,206 L1440,214 C1260,226 1140,208 960,216 C780,224 660,206 480,214 C300,222 180,204 0,212 Z"/>
+    <!-- sand -->
+    <path class="sand" d="M0,210 C180,202 300,220 480,212 C660,204 780,222 960,214 C1140,206 1260,224 1440,212 L1440,260 L0,260 Z"/>
+  </svg>
+  <svg class="hero__palm hero__palm--left" viewBox="0 0 200 320" aria-hidden="true">
+    <path d="M96 320 C92 250 88 190 94 130" stroke="#2a1a2c" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <g fill="#2a1a2c">
+      <path d="M94 132 C60 120 30 126 6 150 C40 138 70 140 94 150 Z"/>
+      <path d="M94 132 C70 100 44 92 14 98 C46 104 72 118 94 145 Z"/>
+      <path d="M94 130 C90 96 100 70 124 52 C110 80 108 106 100 140 Z"/>
+      <path d="M96 132 C124 108 152 104 184 116 C152 116 128 128 102 148 Z"/>
+      <path d="M96 134 C130 128 160 138 186 162 C154 148 128 146 100 150 Z"/>
+      <path d="M94 134 C74 152 62 176 60 206 C74 182 84 164 100 148 Z"/>
+    </g>
+  </svg>
+  <svg class="hero__palm hero__palm--right" viewBox="0 0 200 320" aria-hidden="true">
+    <path d="M104 320 C108 250 112 190 106 130" stroke="#2a1a2c" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <g fill="#2a1a2c">
+      <path d="M106 132 C140 120 170 126 194 150 C160 138 130 140 106 150 Z"/>
+      <path d="M106 132 C130 100 156 92 186 98 C154 104 128 118 106 145 Z"/>
+      <path d="M106 130 C110 96 100 70 76 52 C90 80 92 106 100 140 Z"/>
+      <path d="M104 132 C76 108 48 104 16 116 C48 116 72 128 98 148 Z"/>
+      <path d="M104 134 C70 128 40 138 14 162 C46 148 72 146 100 150 Z"/>
+      <path d="M106 134 C126 152 138 176 140 206 C126 182 116 164 100 148 Z"/>
+    </g>
+  </svg>
+  <div class="candles" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <p class="hero__eyebrow">In Loving Memory of</p>
+    <h1 class="hero__name" id="heroName">Vanessa Wheyland</h1>
+    <p class="hero__dates" id="heroDates" hidden></p>
+    <figure class="hero__photo" id="heroPhoto">
+      <div class="hero__photo-placeholder">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 12c-7 10-11 17-11 24a11 11 0 0 0 22 0c0-7-4-14-11-24z" fill="currentColor" opacity=".9"/><path d="M32 28c-3 4-5 8-5 11a5 5 0 0 0 10 0c0-3-2-7-5-11z" fill="#fff8ea"/></svg>
+        <span>Photo coming soon</span>
+      </div>
+    </figure>
+    <p class="hero__tagline" id="heroTagline"></p>
+    <div class="hero__actions hero__actions--support" id="heroSupport" hidden>
+      <a class="btn btn--support" id="heroSupportBtn" href="#" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.2C1 8.2 3.3 4.5 7 4.5c2 0 3.4 1.1 5 3 1.6-1.9 3-3 5-3 3.7 0 6 3.7 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg>
+        Support Vanessa's Family on GoFundMe
+      </a>
+      <p class="hero__support-note">Opens the family's GoFundMe page</p>
+    </div>
+    <div class="hero__actions">
+      <a class="btn btn--light" href="#events">Vigil details</a>
+      <a class="btn btn--ghost" href="#messages">Leave a message</a>
+    </div>
+  </div>
+  <a class="hero__scroll" href="#events" aria-label="Scroll down"><span></span></a>
+</header>
+
+<main>
+
+<!-- ============ EVENTS ============ -->
+<section class="section" id="events">
+  <div class="container">
+    <p class="section__eyebrow">Gatherings</p>
+    <h2 class="section__title">Come remember her with us</h2>
+    <div class="events" id="eventsList"></div>
+  </div>
+</section>
+
+<!-- ============ GOFUNDME ============ -->
+<section class="section section--give" id="give" hidden>
+  <div class="container container--narrow">
+    <p class="section__eyebrow">Support the Family</p>
+    <h2 class="section__title">If you are able to help</h2>
+    <p class="lead" id="giveBlurb"></p>
+    <a class="btn btn--primary btn--lg" id="giveBtn" href="#" target="_blank" rel="noopener">Visit the GoFundMe page</a>
+    <p class="fineprint">Opens gofundme.com in a new tab. Donations go directly to the family.</p>
+  </div>
+</section>
+
+<!-- ============ UPDATES ============ -->
+<section class="section section--alt" id="updates">
+  <div class="container container--narrow">
+    <p class="section__eyebrow">Updates</p>
+    <h2 class="section__title">News from the family</h2>
+    <div class="updates" id="updatesList"></div>
+  </div>
+</section>
+
+<!-- ============ LIFE STORY ============ -->
+<section class="section" id="life" hidden>
+  <div class="container container--narrow">
+    <p class="section__eyebrow">Her Life</p>
+    <h2 class="section__title">Remembering Vanessa</h2>
+    <div class="prose" id="lifeStory"></div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section section--alt" id="gallery">
+  <div class="container">
+    <p class="section__eyebrow">Photos</p>
+    <h2 class="section__title">Moments we hold onto</h2>
+    <p class="lead lead--center" id="galleryIntro">Have photos of Vanessa? Please add them to the shared album so the family can treasure them.</p>
+    <div class="gallery__actions">
+      <a class="btn btn--primary" id="albumBtn" href="#" target="_blank" rel="noopener" hidden>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        Add your photos to the shared album
+      </a>
+      <a class="btn btn--ghost-dark" id="albumViewBtn" href="#" target="_blank" rel="noopener" hidden>View the full album</a>
+    </div>
+    <div class="gallery" id="galleryGrid"></div>
+    <p class="gallery__empty" id="galleryEmpty" hidden>Photos will appear here soon.</p>
+  </div>
+</section>
+
+<!-- ============ MESSAGES ============ -->
+<section class="section" id="messages">
+  <div class="container">
+    <p class="section__eyebrow">Messages</p>
+    <h2 class="section__title">Words for Vanessa and her family</h2>
+    <p class="lead lead--center">Share a memory, a photo of a moment you loved, or simply let the family know you are thinking of them.</p>
+
+    <div class="messages__layout">
+      <div class="messages__form card">
+        <h3>Leave a message</h3>
+        <div id="messageFormWrap">
+          <p class="muted" id="messageFormPending">The message board is being set up and will open shortly.</p>
+        </div>
+      </div>
+
+      <div class="messages__board">
+        <div class="messages__status" id="messagesStatus"></div>
+        <div class="messages__list" id="messagesList"></div>
+      </div>
+    </div>
+    <p class="fineprint fineprint--center" id="messagesNote" hidden>New messages usually appear within a few minutes. The family may remove anything hurtful or off-topic.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__candle" aria-hidden="true"><div class="candle candle--footer"><div class="flame"></div></div></div>
+    <p class="footer__name" id="footerName">Vanessa Wheyland</p>
+    <p class="footer__line">Forever in our hearts.</p>
+    <p class="footer__contact" id="footerContact" hidden></p>
+    <p class="footer__small">Made with love by her family and friends.</p>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close">&times;</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous">&#8249;</button>
+  <figure>
+    <img id="lightboxImg" alt="">
+    <figcaption id="lightboxCap"></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next">&#8250;</button>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
